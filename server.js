@@ -15,6 +15,7 @@ server.get('/pay', async (req, res, next) => {
     try {
         // Perform the payment
         const token = await pay();
+        console.log(token)
         const link = `<a href="https://accept.paymob.com/api/acceptance/iframes/416800?payment_token=${token}">Payment Link</a>`
         res.send(link)
       } catch (error) {

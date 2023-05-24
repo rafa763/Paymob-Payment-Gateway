@@ -14,6 +14,7 @@ async function Authenticate() {
     }
     const token = await axios.post(authenticateUrl, authenticateData, { headers })
     // console.log(token.data.token)
+    // return token.data.token
     return registerOrder(token.data.token)
 }
 
@@ -82,5 +83,5 @@ async function paymentKey(token, id) {
 }
     
 
-// Authenticate()
+// console.log(await Authenticate())
 export default Authenticate
