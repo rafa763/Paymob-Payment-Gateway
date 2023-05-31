@@ -6,11 +6,12 @@ dotenv.config();
 
 const PAYMOB_URL = "https://accept.paymob.com/api";
 
+// the docs for this API are here: https://docs.paymob.com/docs/accept-standard-redirect
 export async function pay(order_cart, billing_data, amount_cents) {
-  // Authentication Request
+  // Authentication Request -- step 1 in the docs
   const accessToken = await authenticate();
 
-  // Order Registration API
+  // Order Registration API -- step 2 in the docs
   const orderUrl = `${PAYMOB_URL}/ecommerce/orders`;
   const headers = {
     "Content-Type": "application/json",
@@ -25,7 +26,7 @@ export async function pay(order_cart, billing_data, amount_cents) {
   const order = await axios.post(orderUrl, orderData, { headers });
   const orderId = order.data.id;
 
-  // Payment Key Request
+  // Payment Key Request  -- step 3 in the docs
   const paymentKeyUrl = `${PAYMOB_URL}/acceptance/payment_keys`;
 
   const paymentKeyData = {

@@ -11,6 +11,7 @@ const PAYMOB_URL = "https://accept.paymob.com/api";
 // Function to refund a transaction
 export async function refundTransaction(transactionId, refundAmount) {
   try {
+    // Authentication Request -- step 1 in the docs
     const accessToken = await authenticate();
     const url = `${PAYMOB_URL}/acceptance/void_refund/refund`;
     const headers = {

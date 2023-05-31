@@ -6,6 +6,7 @@ const PAYMOB_URL = "https://accept.paymob.com/api";
 // Function to fetch transaction details by ID from Paymob servers
 export async function getTransactionById(transactionId) {
   try {
+    // Authentication Request -- step 1 in the docs
     const accessToken = await authenticate();
     const url = `${PAYMOB_URL}/acceptance/transactions/${transactionId}`;
     const headers = {
