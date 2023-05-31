@@ -9,6 +9,7 @@ const PAYMOB_URL = "https://accept.paymob.com/api";
 const PASSWORD = process.env.PASSWORD;
 const USERNAME = process.env.USERNAME;
 
+// Authenticate with Paymob to get an access token
 export async function authenticate() {
   try {
     const url = `${PAYMOB_URL}/auth/tokens`;

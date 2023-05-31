@@ -1,0 +1,33 @@
+<style>
+    .center-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+      flex-direction: column;
+    }
+  </style>
+<div class="container-fluid mx-auto col-10 col-md-8 col-lg-6 mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="center-image">
+        <img src="/assets/failed.gif" alt="failed trx">
+        <h3>payment failed!</h3>
+        <h4 class="mt-5">Redirecting to Homepage in <span id="countdown">5</span> seconds</h4 class="mt-5">
+        <script>
+            var countdown = 5; // Set the initial countdown value
+        
+            var countdownTimer = setInterval(function() {
+              countdown--; // Decrease the countdown value by 1
+              document.getElementById("countdown").textContent = countdown; // Update the countdown value in the h1 tag
+        
+              if (countdown <= 0) {
+                clearInterval(countdownTimer); // Stop the countdown when it reaches zero
+                window.location.href = "http://localhost:3000/v1"; // Replace with your homepage URL
+              }
+            }, 1000); // Update the countdown every 1 second (1000 milliseconds)
+          </script>
+    </div>
+    </div>
+</div>
+</div>

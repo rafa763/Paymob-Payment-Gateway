@@ -1,0 +1,81 @@
+<div class="container-fluid mx-auto col-10 col-md-8 col-lg-6 mt-5">
+  <div class="row">
+    <div class="col-md-8">
+      <form action="v1/checkout" method="post">
+        <h2>Billing Data</h2>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" />
+        </div>
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="text" class="form-control" id="phoneNumber" />
+        </div>
+        <div class="row">
+          <div class="form-group col-md-8">
+            <label for="street">Street</label>
+            <input type="text" class="form-control" id="street" />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="apartment">Apartment</label>
+            <input type="text" class="form-control" id="apartment" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="building">Building</label>
+          <input type="text" class="form-control" id="building" />
+        </div>
+        <div class="form-group">
+          <label for="floor">Floor</label>
+          <input type="text" class="form-control" id="floor" />
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="city">City</label>
+            <input type="text" class="form-control" id="city" />
+          </div>
+
+          <!-- <div class="row"> -->
+          <div class="form-group col-md-6">
+            <label for="state">State</label>
+            <input type="text" class="form-control" id="state" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="postalCode">Postal Code</label>
+            <input type="text" class="form-control" id="postalCode" />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="country">Country</label>
+            <input type="text" class="form-control" id="country" />
+          </div>
+        </div>
+        <button type="submit"  value=" Send" class="btn btn-primary mt-4">
+          Continue to Checkout
+        </button>
+      </form>
+    </div>
+
+    <div class="col-md-3 mt-4">
+      <div class="sidebar">
+        <h3>Order Details</h3>
+        <p>Nike boots: E£3500</p>
+        <p>Shipping: E£200</p>
+        <hr />
+        <p>Total: E£3700</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,8 @@
 import mongoose from 'mongoose';
 
-async function connect() {
+// set up mongoose connection
+
+const connect = async function connect() {
     mongoose.connect(process.env.MONGO_URI, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
@@ -17,4 +19,4 @@ async function connect() {
     });
 }
 
-module.exports = connect;
+export default connect;

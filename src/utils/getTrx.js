@@ -3,7 +3,7 @@ import { authenticate } from "./authenticate.js";
 
 const PAYMOB_URL = "https://accept.paymob.com/api";
 
-// Function to fetch transaction details by ID
+// Function to fetch transaction details by ID from Paymob servers
 export async function getTransactionById(transactionId) {
   try {
     const accessToken = await authenticate();
