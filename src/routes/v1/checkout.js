@@ -17,7 +17,7 @@ server.post("/", async (req, res, next) => {
     // respond with the payment link
     return res.status(200).json(link);
   } catch (error) {
-    return res.status.json(error);
+    return res.status(400).json(error);
   }
 });
 

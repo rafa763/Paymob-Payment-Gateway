@@ -15,7 +15,7 @@ server.set('view engine', 'ejs');
 
 connect();
 
-server.use("/v1", router);
+server.use("/api", router);
 
 server.listen(PORT, () => {
   console.log(`server running on port ${PORT}`);

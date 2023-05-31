@@ -5,6 +5,7 @@ import voidTrx from './v1/void.js';
 import trx from './v1/trx.js';
 import state from './v1/state.js';
 import processed from './v1/callback.js';
+import orders from './v1/order.js';
 
 const server = express.Router();
 
@@ -16,6 +17,7 @@ server.use('/checkout', pay);
 server.use('/refund', refund);
 server.use('/void', voidTrx);
 server.use('/trx', trx);
+server.use('/orders', orders);
 server.use('/state', state);
 server.use('/processed', processed);
 server.use('*', (req, res) => {
