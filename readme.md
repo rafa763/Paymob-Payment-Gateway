@@ -80,3 +80,7 @@ These functions are used to perform void, get transaction details, and refund op
 This project was inspired by the need to integrate PayMob payment gateway into Node.js applications, making it easier to handle payments and related operations.
 
 Special thanks to the PayMob team for providing the necessary documentation and support for integrating with their payment gateway.
+
+## License
+
+This project is licensed under the MIT License. You are free to use, modify, and distribute the code.
