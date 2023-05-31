@@ -1,0 +1,6 @@
+POST http://localhost:3000/api/refund
+Content-Type: application/json
+
+{
+    "transactionId": "109243716"
+}

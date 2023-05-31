@@ -1,0 +1,6 @@
+POST http://localhost:3000/api/void
+Content-Type: application/json
+
+{
+    "transactionId": "109240609"
+}

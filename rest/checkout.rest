@@ -1,0 +1,29 @@
+POST http://localhost:3000/api/checkout
+Content-Type: application/json
+
+{
+  "order_cart": [
+    {
+      "name": "iphone x",
+      "amount_cents": "2400000",
+      "description": "iphone x 64GB",
+      "quantity": "1"
+    }
+  ],
+  "billing_data": {
+    "apartment": "803",
+    "email": "claudette09@exa.com",
+    "floor": "42",
+    "first_name": "Clifford",
+    "street": "Ethan Land",
+    "building": "8028",
+    "phone_number": "+86(8)9135210487",
+    "shipping_method": "PKG",
+    "postal_code": "01898",
+    "city": "Jaskolskiburgh",
+    "country": "CR",
+    "last_name": "Nicolas",
+    "state": "Utah"
+  },
+  "amount_cents": "2400000"
+}
