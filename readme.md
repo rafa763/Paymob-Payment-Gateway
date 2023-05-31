@@ -75,11 +75,22 @@ this token is then used in the iframe to redirect the user to the payment page
 
 These functions are used to perform void, get transaction details, and refund operations respectively. all of them need to be authenticated first using the `authenticate` function then continue with the operation.
 
+## Rest Examples
+
+in the rest folder you can find examples of how to use the routes in the project, take a look at them to get a better understanding of how to use the project but in general the flow is as follows:
+
+- create an order using the `checkout`
+- Do any the following operations:
+  - get the transaction details using `get_transaction`
+  - get the order status using `orders`
+- if the payment is not captured yet, you can void it using `void`
+- if the payment is captured, you can refund it using `refund`
+
 ## Acknowledgements
 
-This project was inspired by the need to integrate PayMob payment gateway into Node.js applications, making it easier to handle payments and related operations.
+This project was inspired by the need to integrate PayMob payment gateway into Node.js applications, making it easier to handle payments and related operations especially in Egypt.
 
-Special thanks to the PayMob team for providing the necessary documentation and support for integrating with their payment gateway.
+Special thanks to the PayMob team for providing the support for integrating with their payment gateway.
 
 ## License
 

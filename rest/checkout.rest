@@ -1,3 +1,9 @@
+If you want to fillout the form a checkout form within the browser you can find it in the following route
+but the form is not working because it's not sending the data in the correct format and i'm not into the mood to fix it
+http://localhost:3000/api
+
+###
+
 POST http://localhost:3000/api/checkout
 Content-Type: application/json
 
